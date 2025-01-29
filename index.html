@@ -1,41 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zerodha:online brokarage platform for stock,trading and investing</title>
+    <title>Zerodha: Online Brokerage Platform for Stock Trading and Investing</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
- .nav{
-    height: 60px;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 1px solid rgb(230, 213, 213);
- }
+
+        .nav {
+            height: 60px;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid rgb(230, 213, 213);
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav ul li {
+            display: inline;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .img {
+            padding-top: 70px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .div2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        button {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
+
 <body>
-    <header><nav class="nav">
-        <div><img src="assets/logo.svg" alt="" height="15px"></div>
-        <div>
-            <ul style="list-style-type: none;display: flex;
-            gap: 15px; /* Adds space between items */
-            padding: 0;
-            margin: 0;">
-                <li>Sign up</li>
-                <li>About</li>
-                <li>Products</li>
-                <li>Pricing</li>
-                <li>Support</li>
-            </ul>
-        </div>
-    </nav></header>
-    
+    <header>
+        <nav class="nav">
+            <div><img src="assets/logo.svg" alt="Zerodha Logo" height="15px"></div>
+            <div>
+                <ul>
+                    <li><a href="https://zerodha.com/open-account">Sign up</a></li>
+                    <li><a href="https://zerodha.com/about/">About</a></li>
+                    <li><a href="https://zerodha.com/products/">Products</a></li>
+                    <li><a href="https://zerodha.com/charges/#tab-equities">Pricing</a></li>
+                    <li><a href="https://support.zerodha.com/">Support</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="img"><img src="./assets/landing.png" alt="Landing Page" height="370"></div>
+            <div class="div2">
+                <h1>Invest in everything</h1>
+                <h2>
+                    <p>Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>
+                </h2>
+                <a href="https://zerodha.com/open-account">
+                    <button>Sign up for free</button>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
